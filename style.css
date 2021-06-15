@@ -1,0 +1,176 @@
+html, body{
+    height:100%;
+}
+
+@font-face {
+    font-family: Star;
+    src: url(fonts/11870.otf);
+}
+
+@font-face {
+    font-family: Canis;
+    src: url(fonts/canis-minor.otf);
+}
+
+
+
+table{
+    width: max-content;
+    height: 100%;
+    box-sizing: border-box;
+    table-layout: fixed;
+    border-spacing: 5px;
+}
+
+@media (min-width: 600px) {
+    .map{
+        position: relative;
+        width: 655px;
+        margin: 0 auto;
+        border: 0.1em solid rgba(163, 118, 92, 0.6);
+        background: linear-gradient(rgba(107, 66, 46, 0.4) 0.1em, rgba(107, 66, 46, 0) 2px) repeat, linear-gradient(90deg, rgba(107, 66, 46, 0.4) 0.1em, rgba(107, 66, 46, 0) 2px) repeat;
+        background-size: 41px 41px;
+        background-position: -0.1em -0.1em;
+    }
+    .field{
+        margin: 19px 19px;
+    }
+    td{
+        height: 36px;
+        width: 36px;
+        padding: 0;
+        border: transparent;
+        border-radius: 100%;
+    }
+}
+
+
+h1{
+    text-align: center;
+    font-family: Star;
+}
+
+
+.rules{
+    display: inline-block;	
+	box-sizing: border-box;
+
+	outline: none;
+	border: none;  
+	border-radius: 4px;
+    font-size: 1em;
+
+    font-family: Star;
+	color: #fff;
+	background-color: black;
+	box-shadow: 0 2px #262626;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+}
+
+.rules:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 2px white;
+}
+
+.heading:hover{
+    display: inline-block;	
+	box-sizing: border-box;
+
+	outline: none;
+	border: none;  
+	border-radius: 4px;
+    font-size: 1em;
+
+    font-family: Star;
+	color: #fff;
+	background-color: black;
+	box-shadow: 0 2px #262626;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+    padding: 2px;
+}
+
+
+
+
+.gamer1{
+    background: crimson;
+}
+
+.gamer2{
+    background: darkgreen;
+}
+
+.win, .lose1, .lose2, .lose3 {
+    position: absolute; /* or absolute */
+    top: 50%;
+    left: 50%;   
+    width:75%;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: Star;
+    text-align:  center;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+}
+
+
+.win p, .lose1 p, .lose2 p, .lose3 p{
+    font-size:xx-large;
+    margin: 0 auto;
+}
+
+.lose1, .lose2, .lose3{
+    width: 150%;
+}
+
+.again{
+    display: inline-block;	
+	box-sizing: border-box;
+
+	outline: none;
+	border: none;  
+	border-radius: 4px;
+    font-size: 1em;
+
+    font-family: Star;
+	color: #fff;
+	background-color: black;
+	box-shadow: 0 2px #262626;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+}
+
+.rules-div{
+    position: absolute; /* or absolute */
+    margin-top: 100px;
+    left: 50%;   
+    width:125%;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: Canis;
+    font-size: 1em;
+    font-weight:bolder;
+    text-align:  center;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+}
