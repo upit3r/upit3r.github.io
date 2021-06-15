@@ -158,7 +158,7 @@ h1{
 
 .rules-div{
     position: absolute; /* or absolute */
-    margin-top: 100px;
+    margin-top: 500px;
     left: 50%;   
     width:125%;
     background: rgba(255, 255, 255, 0.5);
